@@ -1,0 +1,556 @@
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { 
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+body {
+	background-color: #778899;
+	color: #e5e5e5;
+	font-size: 87.5%;
+	font-family: Arial, 'Lucida Sans Unicode';
+	line_height: 1.5;
+	text-align: left;
+}
+
+td {
+	padding: 2%;
+	text-align: right;
+}
+
+a {
+	text-decoration: none;
+}
+
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#161616;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:12px Arial;
+}
+
+a:link, a:visited {
+	color: #CF5C3F;
+}
+
+a:hover, a:active {
+	background-color: #CF5C3F;
+	color: #FFF;
+}
+
+.body {
+	margin: 0 auto;
+	width: 95%;
+	clear: both;
+}
+
+.mainContent {
+	line-height: 25px;
+}
+
+.content {
+	width: 70%;
+	float: right;
+}
+
+.topContent {
+	background-color: #545454;
+	width: 61%;
+	float: right;
+	padding: 3% 5%;
+	margin-top: 0.5%;
+    animation: fadein 0.0s;
+    -moz-animation: fadein 0.0s; 
+    -webkit-animation: fadein 0.0s; 
+    -o-animation: fadein 0.0s; 
+}
+
+.topTitle {
+	background-color: #545454;
+	width: 99.5%;
+	float: middle;
+	padding: 0.25% 0.25%;
+	margin-top: 0%;
+}
+
+
+.botContent {
+	background-color: #545454;
+	width: 61%;
+	float: right;
+	padding: 3% 5%;
+	margin-top: 1%;
+    animation: fadein 0.0s;
+    -moz-animation: fadein 0.0s; 
+    -webkit-animation: fadein 0.0s;
+    -o-animation: fadein 0.0s; 
+}
+
+.botAnimContent {
+	background-color: #545454;
+	float: left;
+    animation: fadein 0.0s;
+    -moz-animation: fadein 0.0s; 
+    -webkit-animation: fadein 0.0s; 
+    -o-animation: fadein 0.0s;
+}
+
+
+.top-sidebar {
+	width: 22.5%;
+	height: 710px;
+	overflow: auto;
+	float: left;
+	background-color: #545454;
+
+	margin-right: 0%;
+	margin-bottom: 2%;
+	margin-top: 0.5%;
+	/*padding: 2% 3%;*/
+	padding: 0% 3% 2% 3%;
+	
+	/*box-shadow: 10px 10px 10px black;*/
+	animation: fadein 0.0s;
+    -moz-animation: fadein 0.0s; 
+    -webkit-animation: fadein 0.0s;
+    -o-animation: fadein 0.0s;
+
+}
+
+.mainFooter {
+	width: 100%;
+	height: 10%;
+	float: left;
+
+	background-color: #666;
+	margin-top: 2%;
+	margin-bottom: 2%;
+	
+	animation: fadein 0.0s;
+    -moz-animation: fadein 0.0s; 
+    -webkit-animation: fadein 0.0s; 
+    -o-animation: fadein 0.0s; 
+}
+
+.mainFooter p {
+	width: 92%;
+	margin: 1% auto;
+}
+
+.modelDes {
+	background-color: #545454;
+	width: 90%;
+	float: right;
+	padding: 1% 5%;
+	margin-top: 2%;
+}
+
+.inputStatement {
+	background-color: #00868B;
+	color: #FFF;
+	padding: 3% 10% 3% 10%;
+	border: 1px solid black;
+	
+}
+
+#loadBox
+{
+    display: none;
+    padding: 10px;
+
+}
+
+
+
+<!-- Input stuff -->
+
+p {
+	font: 20px tahoma;
+	color: black;
+}
+
+input[type="submit"] {
+	width: 80px;
+	height: 25px;
+	opacity: 0.8;
+	border: 0px;
+}
+
+input[type="button"], input[type="reset"] {
+	width: 170px;
+	height: 30px;
+	opacity: 0.8;
+	border: 0px;
+
+}
+
+input[type="text"] {
+	border: 0px;
+	outline: none;
+	opacity: 0.8;
+	height: 25px;
+	width: 50px;
+	transition:all 0.5s ease;
+}
+
+input[type="text1"] {
+	border: 0px;
+	outline: none;
+	opacity: 0.8;
+	height: 25px;
+	width: 150px;
+	transition:all 0.5s ease;
+}
+
+.tp{
+	border: 1px solid #333333;
+	position: absolute;
+	width: 100px;
+	text-align: center;
+	margin-top: -11px;
+	color: #cccccc;
+	background: #333333;
+	border-radius: 20px;
+	visibility: hidden;
+	-webkit-transition: opacity .6s ease-out;
+	-moz-transition: opacity .6s ease-out;
+	-o-transition: opacity .6s ease-out;
+	transition: opacity .6s ease-out;
+}
+
+input:hover {
+	opacity: 1;
+}
+
+
+
+
+.jspContainer
+{
+	overflow: hidden;
+	position: relative;
+}
+
+.jspPane
+{
+	position: absolute;
+}
+
+.jspVerticalBar
+{
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 16px;
+	height: 100%;
+	background: red;
+}
+
+.jspHorizontalBar
+{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 16px;
+	background: red;
+}
+
+.jspCap
+{
+	display: none;
+}
+
+.jspHorizontalBar .jspCap
+{
+	float: left;
+}
+
+.jspTrack
+{
+	background: #d3d3d3;
+	position: relative;
+}
+
+.jspDrag
+{
+	background: #A4C5F9;
+	position: relative;
+	top: 0;
+	left: 0;
+	cursor: pointer;
+}
+
+.jspHorizontalBar .jspTrack,
+.jspHorizontalBar .jspDrag
+{
+	float: left;
+	height: 100%;
+}
+
+.jspArrow
+{
+	background: #50506d;
+	text-indent: -20000px;
+	display: block;
+	cursor: pointer;
+	padding: 0;
+	margin: 0;
+}
+
+.jspArrow.jspDisabled
+{
+	cursor: default;
+	background: #80808d;
+}
+
+.jspVerticalBar .jspArrow
+{
+	height: 16px;
+}
+
+.jspHorizontalBar .jspArrow
+{
+	width: 16px;
+	float: left;
+	height: 100%;
+}
+
+.jspVerticalBar .jspArrow:focus
+{
+	outline: none;
+}
+
+.jspCorner
+{
+	background: #eeeef4;
+	float: left;
+	height: 100%;
+}
+
+
+* html .jspCorner
+{
+	margin: 0 -3px 0 0;
+}
+
+
+
+
+
+.room1 {
+	margin: auto; 
+	display: inline-block;
+	width: 125px;
+	height: 125px;
+    background-color: #D3D3D3;
+    border-style: solid;
+    border-color: black;
+}
+
+
+
+/* S to I */
+@-webkit-keyframes toInf {
+    from {background-color: #3299CC;}
+    to {background-color: #E3170D;}
+}
+@-moz-keyframes toInf {
+    from {background-color: #3299CC;}
+    to {background-color: #E3170D;}
+}
+@keyframes toInf {
+    from {background-color: #3299CC;}
+    to {background-color: #E3170D;}
+}
+
+/* S to A */
+@-webkit-keyframes toAsy {
+    from {background-color: #3299CC;}
+    to {background-color: #FFC125;}
+}
+@-moz-keyframes toAsy {
+    from {background-color: #3299CC;}
+    to {background-color: #FFC125;}
+}
+@keyframes toAsy {
+    from {background-color: #3299CC;}
+    to {background-color: #FFC125;}
+}
+
+/* I to R */
+@-webkit-keyframes toIR {
+    from {background-color: #E3170D;}
+    to {background-color: #383838;}
+}
+@-moz-keyframes toIR {
+    from {background-color: #E3170D;}
+    to {background-color: #383838;}
+}
+@keyframes toIR {
+    from {background-color: #E3170D;}
+    to {background-color: #383838;}
+}
+
+/* A to R */
+@-webkit-keyframes toAR {
+    from {background-color: #FFC125;}
+    to {background-color: #383838;}
+}
+@-moz-keyframes toAR {
+    from {background-color: #FFC125;}
+    to {background-color: #383838;}
+}
+@keyframes toAR {
+    from {background-color: #FFC125;}
+    to {background-color: #383838;}
+}
+
+/* S to R */
+@-webkit-keyframes toSR {
+    from {background-color: #3299CC;}
+    to {background-color: #383838;}
+}
+@-moz-keyframes toSR {
+    from {background-color: #3299CC;}
+    to {background-color: #383838;}
+}
+@keyframes toSR {
+    from {background-color: #3299CC;}
+    to {background-color: #383838;}
+}
+
+
+
+
+
+
+@media only screen and (min-width: 150px) and (max-width: 800px) {
+	
+.body {
+	width: 91%;
+	font-size: 95%;
+}
+	
+.mainHeader img {
+	width: 100%;
+}
+
+.mainHeader nav {
+	height: 160px;
+}
+
+.mainHeader nav ul {
+	padding-left: 0;
+}
+
+.mainHeader nav ul li {
+	width: 100%;
+	text-align: center;
+}
+
+.mainHeader nav a:link, .mainHeader nav a:visited {
+	padding: 10px 25px;
+	height: 20px;
+	display: block;
+}
+
+.content {
+	width: 100%;
+	float: left;
+	margin-top: 2%;
+}
+
+.topTitle {
+	background-color: #545454;
+	width: 99.9%;
+	float: middle;
+	margin: 0 2% 2% 0;
+	padding: 0.25% 2%;
+}
+
+.post-info {
+	display: none;
+}
+
+.topContent {
+	background-color: #545454;
+	float: left;
+	width: 815px;
+	padding: 3% 5%;
+	margin: 0 2% 2% 0;
+	
+}
+
+
+.botContent {	
+	margin: 0 2% 2% 0;
+	padding: 3% 5%;
+	float: left;
+	width: 700px;
+}
+
+.top-sidebar, .middle-sidebar, .bottom-sidebar {
+	width: 98%;
+	margin: 0 2% 2% 0;
+	padding: 2% 3%;
+}
+
+.mainFooter {
+	background-color: #545454;
+	float: left;
+	width: 94%;
+	padding: 3% 5%;
+	margin: 2% 2% 2% 0;
+}
+
+
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

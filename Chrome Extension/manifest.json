@@ -1,0 +1,25 @@
+{
+	"name": "YouTube Ratings Advance Scout",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description": "Shows the thumbs up ratio before clicking on a video on YouTube",
+	"permissions": [
+			"webNavigation",
+			"activeTab",
+			"tabs",
+			"https://www.youtube.com/*",
+    		"https://www.googleapis.com/*"
+  	],
+  	"background": {
+  			"persistent": true,
+   	 		"scripts": ["background.js"]
+  	},
+	"content_scripts": [
+    		{
+      			"matches": ["https://www.youtube.com/*"],
+      			"js" : ["jquery.js", "content_main.js", "ext_LikeDislike_Home.js", "ext_LikeDislike_Search.js", "ext_LikeDislike.js"],
+      			"run_at": "document_end",
+      			"all_frames" : true
+    		}
+  	]
+}

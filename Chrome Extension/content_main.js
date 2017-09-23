@@ -70,7 +70,6 @@ function createBar(numLikes, numDislikes, id){
 			var tot = numLikes+numDislikes;
 			var percentLikes = Math.round((numLikes*1.0/tot)*100);
 			var percentDislikes = Math.round((numDislikes*1.0/tot)*100);
-			console.log(percentLikes+', '+percentDislikes);
 			res += '<div class="likedislike"> <style type = "text/css">body{min-width:100%;} #all{width:90px; margin: 0 auto;float:left;} #likes'+id+'{height:5px; width:'+percentLikes+'% ; background:#33A1C9; float:left;}';
 			res += '#dislikes'+id+'{height:5px; width:'+percentDislikes+'%; background:#CCCCCC; float:right;} #bar{width:90px;marin: 0 auto;float:left;} </style>';
 			res += '<div id="all"><div id="bar"> <div id="likes'+id+'"></div><div id="dislikes'+id+'"></div> </div></div>';

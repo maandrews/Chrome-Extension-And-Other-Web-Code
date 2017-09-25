@@ -14,6 +14,15 @@ function load_home_page(){
 		// Get recommended videos on page
 		videos = document.getElementsByClassName("yt-simple-endpoint style-scope ytd-grid-video-renderer");
 		uniqueClassName = document.getElementsByClassName("style-scope ytd-two-column-browse-results-renderer");
+		
+		/*var target = uniqueClassName[0].children[2];
+		var observer = new MutationObserver(function(mutations) {
+		    mutations.forEach(function(mutation) {
+		        console.log("hi");
+		    });
+		});
+		var config = {childList: true};
+		observer.observe(target, config);*/
 
 		var id = [];
 		var idIndex = 0;
@@ -93,6 +102,7 @@ function load_home_page(){
 
 				})(j);
 			}
+			
 		},200);		
 
 	}

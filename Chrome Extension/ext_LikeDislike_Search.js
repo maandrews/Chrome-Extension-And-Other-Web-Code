@@ -1,5 +1,14 @@
 // Requests video likes and dislikes from Google, and adds like/dislike bar to each video on the 'results' pages.
 
+/*chrome.runtime.sendMessage({query: "myURL"}, function(response){
+	var tabURL = response.tabUrl;
+	var page_search = new RegExp("results");
+	if(page_search.test(tabURL)){
+		console.log("On Search Page...");
+		setTimeout(function(){load_search_page();},1000);
+	}
+});*/
+
 var recent_load = false;
 function load_search_page(){
 	if(!recent_load){
